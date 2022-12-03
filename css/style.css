@@ -1,0 +1,465 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  overflow-x: hidden;
+}
+/****************** header *****************************/
+header {
+          background-color: White;
+          text-align: center;
+          padding: 10px;
+          display: flex;
+          overflow: hidden;
+}
+header .right-block{
+  margin-right: 0;
+}
+header h1{
+  padding-top: 3%;
+}
+/******* nav ******************/
+nav{
+  width: 90%;
+  margin:2% 2% 5% 5%;
+  padding-right: 5%;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: justify;
+}
+nav ul li {
+    position: relative;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+nav ul a{
+  text-decoration: none;
+  font-weight: bold;
+  color: Blue;
+  display: block;
+  font-family: 'Verdana';
+  font-size: 100%;
+  padding-left: 4em;
+}
+nav ul a:hover{
+  color:#00FFF6;
+}
+/********************** footer ***************************/
+footer{
+  position: relative;
+  width: 100%;
+}
+footer img{
+  width: 50px;
+  height: 50px;
+}
+h1{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+h3{
+  padding: 3%;
+}
+.wrapper{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.wrapper > div{
+  border:2px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.one{
+  /* start/end */
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.two{
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+.three{
+  grid-column: 1/4;
+  grid-row:2/3;
+}
+.GhiblisHistory{
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+.four{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.five{
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container > div {
+  border:2px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.flex-container img{
+  height: 150px;
+  width: 150px;
+}
+.movieList{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20%;;
+}
+.right-block{
+  float: right;
+  margin-right: 15px;
+}
+.left-block{
+  float: left;
+  margin-left: 20px;
+}
+.account {
+  text-decoration: none;
+}
+hr {
+    border-color: #FAF7F0;
+    border-style: none;
+    border-top-style: solid;
+    border-width: 3px;
+    width: 66%;
+    margin: 2% 0 2% 17%;
+}
+.movie-info{
+  width: 70%;
+  border-color: #81C6E8;
+  border-collapse: collapse;
+}
+a{
+  color: black;
+}
+a:active {
+  color: blue;
+}
+a[tabindex]:focus {
+  color:blue;
+  outline: none;
+}
+.print-link{
+  display: block;
+  padding-top: 4em;
+  padding-left: 9em;
+  font-size: 14pt;
+}
+/******************************* Resposive ***********************************/
+/*********** for mobile ******************************************************/
+@media only screen and (min-width: 280px) {
+  body{
+    background-color: #B6FFCE;
+    min-height: 100%;
+    position: absolute;
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+  nav{
+    margin-left: 1%;
+  }
+  footer{
+    position: absolute;
+    background-color: #D6E4E5;
+    min-width: 105%;
+    left: 0;
+  }
+  .one .youtubeVideo{
+    width: 950px;
+    height:540px;
+    margin-left: 1%;
+  }
+  .wrapper p{
+    font-size: 150%;
+    text-align: left;
+  }
+  .wrapper{
+    max-width: 50%;
+    grid-template-columns: 1fr;
+    margin: 50px auto auto 10px;
+  }
+  .one{
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+  .two{
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+  .three{
+    grid-column: 1;
+    grid-row:3/4;
+  }
+  .GhiblisHistory{
+    grid-column: 1;
+    grid-row: 4/5;
+  }
+  .GhiblisHistory td, th{
+    font-size: 25px;
+  }
+  .four{
+    grid-column: 1;
+    grid-row: 5/6;
+  }
+  .five{
+    grid-column: 1;
+    grid-row: 6/7;
+  }
+  .flex-container{
+    display: flex;
+    flex-wrap:nowrap;
+    margin-left: 20px;
+  }
+  .footer{
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    left: 0;
+  }
+  .footer .right-block img{
+    width: 50px;
+    height: 50px;
+  }
+  .movie-info{
+    margin-left: 125px;
+  }
+  .personal-video{
+    width: 950px;
+    height:540px;
+  }
+  .flex-container li{
+    font-size: 25px;
+  }
+  .two p{
+    text-align: left;
+  }
+  .five p{
+    text-align: left;
+    font-family: serif;
+    font-size: 160%;
+  }
+}
+/*****************************************/
+
+/***************************** fpr site **************************************/
+@media only screen and (min-width: 768px) {
+  body{
+    background-color: #B6FFCE;
+    min-height: 100%;
+    position: absolute;
+    min-width: 100%;
+  }
+  footer{
+    position: absolute;
+    background-color: #D6E4E5;
+    min-width: 105%;
+    left: 0;
+  }
+  .one .youtubeVideo{
+    width: 950px;
+    height:540px;
+  }
+  h1{
+    font-size: 70px;
+  }
+  h3{
+    font-size: 40px;
+  }
+  h4{
+    font-size: 30px;
+  }
+  nav{
+    margin-left: 20%;
+  }
+  .wrapper{
+    grid-template-columns: auto auto auto;
+    max-width: 100%;
+    margin-left: 3em;
+  }
+  .one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .two{
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .three{
+    grid-column: 1/4;
+    grid-row:2/3;
+  }
+  .GhiblisHistory{
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  .four{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .five{
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  .movieList{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+  }
+  .right-block {
+    margin-right: 5em;
+  }
+  hr {
+      border-color: #FAF7F0;
+      border-style: none;
+      border-top-style: solid;
+      border-width: 3px;
+      width: 66%;
+  }
+  .movie-info{
+    margin-left: 13%;
+    border-color: #81C6E8;
+    border-collapse: collapse;
+  }
+  .movie-info td,th{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+  .GhiblisHistory p {
+    font-size: 40px;
+    text-align: left;
+    padding: 20px;
+  }
+  .flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    height: 270px;
+  }
+  .flex-container img{
+    height: 200px;
+    width: 250px;
+  }
+  .flex-container li {
+    font-size: 30px;
+    width: 10em;
+  }
+  .flex-container .movieList{
+    width: 350px;
+  }
+}
+/*************************************************************************/
+@media only screen and (min-width: 1000px){
+  h1{
+    font-size: 2.7em;
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    font-size: 1.7em;
+  }
+  h4{
+    font-size: 25px;
+  }
+  /*** wrapper *******/
+  .wrapper p{
+    font-size: 120%;
+  }
+  .wrapper .two p{
+    font-size: 150%;
+  }
+  .wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .one .youtubeVideo{
+    width: 560px;
+    height:315px;
+    margin-right: 1.5em;
+  }
+  .one{
+    /* start/end */
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row: 1/2;
+  }
+  .two{
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .three{
+    grid-column: 1/4;
+    grid-row:2/3;
+  }
+  .GhiblisHistory{
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  .GhiblisHistory tr{
+    margin-right: 2em;
+    margin-top: 0.8em;
+  }
+  .four{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .five{
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  .personal-video{
+    width: 560px;
+    height:315px;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+  }
+  /**** flex-container *******/
+  .flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 6%;
+    height: 11em;
+    width: 80%;
+  }
+  .flex-container li{
+    font-size: 1.2em;
+  }
+  .flex-container .movieList{
+    padding-top: 2em;
+    padding-left: 2em;
+    width: 16em;
+  }
+  .flex-container img{
+    width: 150px;
+    width: 150px;
+  }
+  .flex-container img{
+    height: 150px;
+    width: 150px;
+  }
+  .right-block{
+    float: right;
+    margin-right: 14em;
+  }
+  .left-block{
+    float: left;
+    margin-left: 11em;
+  }
+
+}
